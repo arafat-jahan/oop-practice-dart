@@ -1,0 +1,16 @@
+class Father{
+  void greet(){
+    print("hello form father.");
+  }
+}
+class Son extends Father{
+  @override
+  void greet(){
+    super.greet();
+    print("hello from son");
+  }
+}
+void main(){
+  Son s = Son();
+  s.greet();
+}
